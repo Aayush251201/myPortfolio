@@ -5,7 +5,7 @@ import Tooltip from '@mui/material/Tooltip';
 const Header = ({scrollToSection}) => {
   return (
     <div className='h-[10vh] w-screen flex justify-between items-center sticky top-0 z-50 py-[1vh] px-[3vw] backdrop-blur-lg bg-white/30 text-white' >
-        <div className='text-[3.5vmax] max-sm:hidden'>Parekh.</div>
+        <div className='text-[3.5vmax] max-sm:hidden cursor-pointer' onClick={()=>{scrollToSection('section1')}}>Parekh.</div>
         <div className='flex gap-[5vw]  '>
             <p className='cursor-pointer text-[1.5vmax]' onClick={()=>{scrollToSection('section1')}}>Home</p>
             <p className='cursor-pointer text-[1.5vmax]' onClick={()=>{scrollToSection('section2')}}>About Me</p>
